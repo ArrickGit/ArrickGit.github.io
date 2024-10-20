@@ -67,7 +67,7 @@ ul li {
 }
 
 ul li:hover {
-    background: #8b0000; /* Dark red hover effect */
+    background: #4a90e2; /* Dark red hover effect */
     color: #fff; /* White text for contrast */
 }
 
