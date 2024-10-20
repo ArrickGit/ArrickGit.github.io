@@ -67,23 +67,14 @@ ul li {
 }
 
 ul li:hover {
-    background: #4a90e2; /* Dark red hover effect */
+    background: #4a90e2; /* Blue hover effect */
     color: #fff; /* White text for contrast */
-}
-
-a {
-    color: #4a90e2;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #d1d1d1; /* Light grey on hover */
-    text-decoration: underline;
 }
 
 .blue-link {
     color: #4a90e2; /* Blue links */
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 ul li:hover .blue-link {
