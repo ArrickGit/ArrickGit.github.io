@@ -1,3 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark grey background */
+    color: #d1d1d1; /* Light grey text for better contrast */
+}
+
+header {
+    background: linear-gradient(to right, #333, #4a90e2);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #d1d1d1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #1e1e1e;
+    background-color: #4a90e2; /* Blue hover effect */
+    border-radius: 5px;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1.5rem;
+    background-color: #2c2c2c; /* Darker grey for sections */
+    border-left: 8px solid #4a90e2; /* Blue accent border */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+h1, h2 {
+    color: #4a90e2; /* Blue headings */
+}
+
+p {
+    line-height: 1.6;
+    color: #d1d1d1;
+}
+
 ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
@@ -13,10 +71,19 @@ ul li:hover {
     color: #fff; /* White text for contrast */
 }
 
-.blue-link {
-    color: #4a90e2; /* Blue links */
+a {
+    color: #4a90e2;
     text-decoration: none;
     transition: color 0.3s;
+}
+
+a:hover {
+    color: #d1d1d1; /* Light grey on hover */
+    text-decoration: underline;
+}
+
+.blue-link {
+    color: #4a90e2; /* Blue links */
 }
 
 ul li:hover .blue-link {
@@ -24,6 +91,15 @@ ul li:hover .blue-link {
 }
 
 .blue-link:hover {
-    color: #d1d1d1; /* Light grey on link hover */
+    color: #d1d1d1; /* Light grey on hover */
     text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(to right, #4a90e2, #333);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
 }
