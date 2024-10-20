@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrick's GitHub Website</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #1e1e1e; /* Dark grey background */
+            color: #d1d1d1; /* Light grey text for better contrast */
         }
         header {
-            background: linear-gradient(to right, #4a90e2, #357ab7);
+            background: linear-gradient(to right, #333, #4a90e2);
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         nav {
             margin: 0 auto;
@@ -24,62 +27,77 @@
             justify-content: center;
         }
         nav a {
-            color: #fff;
+            color: #d1d1d1;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            padding: 0.5rem;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        nav a:hover {
+            color: #1e1e1e;
+            background-color: #4a90e2; /* Blue hover effect */
+            border-radius: 5px;
         }
         section {
             margin: 2rem auto;
             max-width: 800px;
-            padding: 1rem;
-            background-color: #fff;
-            border-left: 8px solid #4a90e2;
+            padding: 1.5rem;
+            background-color: #2c2c2c; /* Darker grey for sections */
+            border-left: 8px solid #4a90e2; /* Blue accent border */
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
         }
         h1, h2 {
-            color: #333;
+            color: #4a90e2; /* Blue headings */
         }
         p {
             line-height: 1.6;
-            color: #555;
-        }
-        footer {
-            background: linear-gradient(to right, #357ab7, #4a90e2);
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        .blue-text {
-            color: #357ab7;
+            color: #d1d1d1;
         }
         ul li {
             margin: 0.5rem 0;
             padding: 0.5rem;
-            background: #e1ecf7;
-            border-left: 4px solid #4a90e2;
+            background: #333; /* Darker grey for list items */
+            border-left: 4px solid #4a90e2; /* Blue accent border */
             border-radius: 4px;
+            color: #d1d1d1;
+            transition: background-color 0.3s;
+        }
+        ul li:hover {
+            background: #4a90e2; /* Blue hover effect */
+            color: #1e1e1e;
         }
         a {
             color: #4a90e2;
             text-decoration: none;
+            transition: color 0.3s;
         }
         a:hover {
+            color: #d1d1d1; /* Light grey on hover */
             text-decoration: underline;
         }
+        footer {
+            background: linear-gradient(to right, #4a90e2, #333);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .blue-link {
+            color: #4a90e2; /* Blue links */
+        }
+        .blue-link:hover {
+            color: #d1d1d1; /* Light grey on hover */
+        }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Welcome to Arrick GitHub Website</h1>
+        <h1>Welcome to Arrick's GitHub Website</h1>
         <nav>
             <a href="#about">About Me</a>
             <a href="#projects">My Projects</a>
@@ -89,51 +107,48 @@
 
     <!-- About Me Section -->
     <section id="about">
-        <h2 class="blue-text">About Me</h2>
+        <h2>About Me</h2>
         <p>
             Hello! I'm Arrick, an enthusiastic developer with a background in anthropology, communications, and Japanese language.
             I am skilled in web development, programming, and data analysis. I'm currently studying computer engineering and have experience in mapping with tools like ArcGIS and Erdas.
         </p>
-        <p>
-            This webpage is still work in progress
-        </p>
+        <p>This webpage is still a work in progress.</p>
     </section>
 
     <!-- My Projects Section -->
     <section id="projects">
-        <h2 class="blue-text">My Projects</h2>
+        <h2>My Projects</h2>
         <ul>
             <li>
                 <strong>Custom Memory Card Game</strong>
-                <p>Memory card game that lets you choose custom pictures as your game pieces</p>
+                <p>Memory card game that lets you choose custom pictures as your game pieces.</p>
                 <a href="https://github.com/ArrickGit/Custom-Memory-Card-Game" target="_blank" class="blue-link">
                     <h2>Custom Memory Card Game</h2>
                 </a>
             </li>            
             <li>
                 <strong>Vaccine Scheduling for Hackathon 2021</strong>
-                <p>Develop a mobile/web application through which patients and health organizations can manage scheduling and administration of the COVID-19 vaccines</p>
+                <p>Developed a mobile/web app for managing COVID-19 vaccine scheduling.</p>
                 <a href="https://github.com/ArrickGit/Vaccine-Scheduling-Code-for-Hackathon-2021" target="_blank" class="blue-link">
                     <h2>Vaccine Scheduling for Hackathon 2021</h2>
                 </a>
             </li>
             <li>
                 <strong>Java OOP Stamp Catalogue</strong> 
-                <p>A simple stamp catalogue that utilises Java OOP design done in Temasek Poly</p>
+                <p>A simple stamp catalogue using Java OOP design created at Temasek Poly.</p>
                 <a href="https://github.com/ArrickGit/TP_Java_StampCatalogue" target="_blank" class="blue-link">
                     <h2>Stamp Catalogue</h2>
                 </a>
             </li>
-            
         </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="blue-text">Contact Me</h2>
+        <h2>Contact Me</h2>
         <p>
-            Feel free to reach out to me via <a href="mailto:arrickang2001@gmail.com">email</a>, 
-            or connect with me on <a href="https://github.com/ArrickGit" target="_blank">GitHub</a>.
+            Feel free to reach out to me via <a href="mailto:arrickang2001@gmail.com" class="blue-link">email</a>, 
+            or connect with me on <a href="https://github.com/ArrickGit" target="_blank" class="blue-link">GitHub</a>.
         </p>
     </section>
 
