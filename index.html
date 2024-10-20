@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background: linear-gradient(to right, #4a90e2, #357ab7);
             color: #fff;
             padding: 1rem 0;
             text-align: center;
@@ -27,12 +27,14 @@
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
         section {
             margin: 2rem auto;
             max-width: 800px;
             padding: 1rem;
             background-color: #fff;
+            border-left: 8px solid #4a90e2;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
@@ -44,11 +46,28 @@
             color: #555;
         }
         footer {
-            background-color: #333;
+            background: linear-gradient(to right, #357ab7, #4a90e2);
             color: #fff;
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
+        }
+        .blue-text {
+            color: #357ab7;
+        }
+        ul li {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #e1ecf7;
+            border-left: 4px solid #4a90e2;
+            border-radius: 4px;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -66,21 +85,19 @@
 
     <!-- About Me Section -->
     <section id="about">
-        <h2>About Me</h2>
+        <h2 class="blue-text">About Me</h2>
         <p>
-            Hello! I'm [Your Name], an enthusiastic developer with a background in anthropology, communications, and Japanese language. 
-            I am skilled in web development, programming, and data analysis. 
-            I'm currently studying computer engineering and have experience in mapping with tools like ArcGIS and Erdas.
+            Hello! I'm Arrick, an enthusiastic developer with a background in anthropology, communications, and Japanese language.
+            I am skilled in web development, programming, and data analysis. I'm currently studying computer engineering and have experience in mapping with tools like ArcGIS and Erdas.
         </p>
         <p>
-            I love exploring new technologies and solving real-world problems through coding. 
-            In my spare time, I work on personal projects, contribute to open-source, and learn about new frameworks and tools.
+            This webpage is still work in progress
         </p>
     </section>
 
     <!-- My Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2 class="blue-text">My Projects</h2>
         <ul>
             <li>
                 <strong>Project 1:</strong> <em>Title of the Project</em>
@@ -99,16 +116,16 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="blue-text">Contact Me</h2>
         <p>
-            Feel free to reach out to me via <a href="mailto:your-email@example.com">email</a>, 
-            or connect with me on <a href="https://github.com/your-username" target="_blank">GitHub</a>.
+            Feel free to reach out to me via <a href="mailto:arrickang2001@gmail.com">email</a>, 
+            or connect with me on <a href="https://github.com/ArrickGit" target="_blank">GitHub</a>.
         </p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Arrick. All rights reserved.</p>
     </footer>
 
 </body>
