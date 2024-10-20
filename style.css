@@ -20,27 +20,17 @@ header {
 
 /* Title Styling */
 h1 {
-    font-size: 3rem; /* Larger font size */
+    font-size: 3.5rem; /* Larger font size */
     font-weight: 600; /* Bold font */
-    background: linear-gradient(45deg, #4a90e2, #357ab7, #2b4b78);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #4a90e2; /* Solid blue color */
     margin: 0;
     padding: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Reduced shadow for clarity */
-    animation: glow 2s infinite alternate;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Defined shadow for depth */
 }
 
-/* Reduced Glow Effect */
-@keyframes glow {
-    from {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 5px #4a90e2, 0 0 10px #357ab7;
-    }
-    to {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 15px #4a90e2, 0 0 20px #357ab7;
-    }
-}
+/* Remove the animated glow */
 
+/* Navigation Styles */
 nav {
     margin: 0 auto;
     max-width: 800px;
