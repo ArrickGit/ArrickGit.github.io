@@ -6,6 +6,7 @@ ul li {
     border-radius: 4px;
     color: #d1d1d1;
     transition: background-color 0.3s, color 0.3s;
+    position: relative;
 }
 
 ul li:hover {
@@ -23,7 +24,7 @@ ul li:hover .blue-link {
     color: #ffa500; /* Change to orange on hover */
 }
 
-.blue-link:hover {
-    color: #d1d1d1; /* Light grey on link hover */
+ul li:hover .blue-link:hover {
+    color: #ffd700; /* Change to gold when hovering over the link itself */
     text-decoration: underline;
 }
