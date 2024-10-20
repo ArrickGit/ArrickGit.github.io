@@ -13,6 +13,18 @@ header {
     padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    
+    h1 {
+        color: #4a90e2; /* Blue text color */
+        text-shadow: 
+            -1px -1px 0 #000,  /* Top-left shadow */
+             1px -1px 0 #000,  /* Top-right shadow */
+            -1px  1px 0 #000,  /* Bottom-left shadow */
+             1px  1px 0 #000;  /* Bottom-right shadow */
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+    
 }
 
 nav {
