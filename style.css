@@ -1,9 +1,29 @@
-/* style.css */
+ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #333; /* Darker grey for list items */
+    border-left: 4px solid #4a90e2; /* Blue accent border */
+    border-radius: 4px;
+    color: #d1d1d1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul li:hover {
+    background: #4a90e2; /* Blue hover effect */
+    color: #1e1e1e; /* Dark text for contrast */
+}
 
 .blue-link {
-    color: #4a90e2; /* Blue color for the link */
+    color: #4a90e2; /* Blue links */
     text-decoration: none;
+    transition: color 0.3s;
 }
+
+ul li:hover .blue-link {
+    color: #1e1e1e; /* Change to dark color on hover */
+}
+
 .blue-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #d1d1d1; /* Light grey on hover */
+    text-decoration: underline;
 }
