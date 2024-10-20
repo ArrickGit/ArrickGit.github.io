@@ -1,6 +1,9 @@
+/* Import Google Font: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins font */
     margin: 0;
     padding: 0;
     background-color: #1e1e1e; /* Dark grey background */
@@ -13,18 +16,18 @@ header {
     padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    
-    h1 {
-        color: #4a90e2; /* Blue text color */
-        text-shadow: 
-            -1px -1px 0 #000,  /* Top-left shadow */
-             1px -1px 0 #000,  /* Top-right shadow */
-            -1px  1px 0 #000,  /* Bottom-left shadow */
-             1px  1px 0 #000;  /* Bottom-right shadow */
-        margin: 0;
-        padding: 0.5rem 0;
-    }
-    
+}
+
+h1 {
+    color: #4a90e2; /* Blue text color */
+    text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
+    margin: 0;
+    padding: 0.5rem 0;
+    font-weight: 600; /* Bold font weight for better visibility */
 }
 
 nav {
@@ -59,13 +62,15 @@ section {
     box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
-h1, h2 {
+h2 {
     color: #4a90e2; /* Blue headings */
+    font-weight: 600; /* Bold font weight */
 }
 
 p {
     line-height: 1.6;
     color: #d1d1d1;
+    font-weight: 400; /* Regular weight for better readability */
 }
 
 ul li {
