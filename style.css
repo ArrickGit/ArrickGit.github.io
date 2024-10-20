@@ -20,10 +20,10 @@ ul li:hover {
 }
 
 ul li:hover .blue-link {
-    color: #1e1e1e; /* Change to dark color on hover */
+    color: #ffa500; /* Change to orange on hover */
 }
 
 .blue-link:hover {
-    color: #d1d1d1; /* Light grey on hover */
+    color: #d1d1d1; /* Light grey on link hover */
     text-decoration: underline;
 }
