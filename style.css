@@ -21,16 +21,24 @@ header {
 /* Title Styling */
 h1 {
     font-size: 3.5rem; /* Larger font size */
-    font-weight: 600; /* Bold font */
+    font-weight: 700; /* Bolder font */
     color: #4a90e2; /* Solid blue color */
     margin: 0;
     padding: 1rem 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Defined shadow for depth */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    animation: scaleBounce 2s infinite; /* Animation added */
 }
 
-/* Remove the animated glow */
+/* Bouncing and Scaling Animation */
+@keyframes scaleBounce {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger */
+    }
+}
 
-/* Navigation Styles */
 nav {
     margin: 0 auto;
     max-width: 800px;
