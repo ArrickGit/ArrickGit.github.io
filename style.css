@@ -6,12 +6,11 @@ ul li {
     border-radius: 4px;
     color: #d1d1d1;
     transition: background-color 0.3s, color 0.3s;
-    position: relative;
 }
 
 ul li:hover {
-    background: #4a90e2; /* Blue hover effect */
-    color: #1e1e1e; /* Dark text for contrast */
+    background: #8b0000; /* Dark red hover effect */
+    color: #fff; /* White text for contrast */
 }
 
 .blue-link {
@@ -21,10 +20,10 @@ ul li:hover {
 }
 
 ul li:hover .blue-link {
-    color: #ffa500; /* Change to orange on hover */
+    color: #ffd700; /* Gold color for the link on hover */
 }
 
-ul li:hover .blue-link:hover {
-    color: #ffd700; /* Change to gold when hovering over the link itself */
+.blue-link:hover {
+    color: #d1d1d1; /* Light grey on link hover */
     text-decoration: underline;
 }
