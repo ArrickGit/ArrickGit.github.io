@@ -21,49 +21,23 @@ header {
 /* Title Styling */
 h1 {
     font-size: 3rem; /* Larger font size */
-    font-weight: 700; /* Bolder font for clarity */
-    display: inline-block;
+    font-weight: 600; /* Bold font */
     background: linear-gradient(45deg, #4a90e2, #357ab7, #2b4b78);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Gradient text */
     margin: 0;
     padding: 1rem 0;
-    animation: bounce 2s infinite; /* Bouncing animation */
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    animation: glow 2s infinite alternate; /* Animated glow */
 }
 
-/* Bouncing Effect */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+/* Animated Glow Effect */
+@keyframes glow {
+    from {
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), 0 0 20px #4a90e2, 0 0 30px #357ab7, 0 0 40px #2b4b78;
     }
-    40% {
-        transform: translateY(-10px); /* Bouncing up */
-    }
-    60% {
-        transform: translateY(-5px); /* Bouncing down */
-    }
-}
-
-/* Wave Effect for Letters */
-h1 span {
-    display: inline-block;
-    animation: wave 1.5s infinite;
-}
-
-/* Delay for Wave Animation */
-h1 span:nth-child(odd) {
-    animation-delay: 0.1s;
-}
-h1 span:nth-child(even) {
-    animation-delay: 0.3s;
-}
-
-@keyframes wave {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(5deg); /* Subtle wave for clarity */
+    to {
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), 0 0 30px #4a90e2, 0 0 40px #357ab7, 0 0 50px #2b4b78;
     }
 }
 
@@ -129,6 +103,7 @@ ul li:hover p,
 ul li:hover strong,
 ul li:hover h2 {
     color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .blue-link {
